@@ -1,11 +1,11 @@
 # WAD2 Assignment
 
-# Implementation Overview
+# Overview
 
 In this project, a microservice architecture was developed for a containerised application environment. The IWTSC container was deconstructed into three separate containers, specifically for the React app, its API, and the PostgreSQL database.
 Additionally, a MongoDB database was introduced to handle the migration and delivery of questions to the app. The project also includes the integration of the alevelcomputing site into IWTSC by using an iFrame.
 
-# Procedures
+# Implementations
 
 ## Microservices separation
 

@@ -17,18 +17,6 @@ async function migrateQuestions() {
     });
     console.log("MongoDB connected.");
 
-    // const Question = mongoose.model(
-    //   "Question",
-    //   new mongoose.Schema({
-    //     id: Number,
-    //     qtype: String,
-    //     urltitle: String,
-    //     fulltitle: String,
-    //     qtext: String,
-    //     metadata: Object,
-    //   })
-    // );
-
     const questions = await Questions.findAll();
     const questionDocs = questions.map((q) => q.toJSON());
 

@@ -9,7 +9,7 @@ Additionally, a MongoDB database was introduced to handle the migration and deli
 
 ## Microservices separation
 
-In order to deconstruct the IWTSC application, Dockerfiles were created for each component: one for the React app, one for the API, and one for the PostegreSQL database. Also, a 'docker-compose.yml' file was created to manage these services. This file configured each container and defined how they interact with each other. After creating the Dockerfiles and 'docker-compose.yml', the commands 'docker-compose build' and 'docker-compose up' were executed to build and run the containers to test the application. The three containers operated seamlessly.
+In order to deconstruct the IWTSC application into three separate containers, Dockerfiles were created: one for the frontend, and one for the server and PostegreSQL database. Also, a 'docker-compose.yml' file was created to manage these services. This file configured each container and defined how they interact with each other. After creating the Dockerfiles and 'docker-compose.yml', the commands 'docker-compose build' and 'docker-compose up' were executed to build and run the containers to test the application. The three containers operated seamlessly.
 
 ## MongoDB migration
 

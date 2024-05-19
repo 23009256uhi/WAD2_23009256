@@ -1,18 +1,12 @@
-import QuestionPage from './pages/QuestionPage';
-import SignUpIn from './pages/SignUpIn'
-import Home from './pages/Home'
-import QuestionList from './pages/QuestionList'
-import NavBar from './components/NavBar';
+import QuestionPage from "./pages/QuestionPage";
+import SignUpIn from "./pages/SignUpIn";
+import Home from "./pages/Home";
+import QuestionList from "./pages/QuestionList";
+import NavBar from "./components/NavBar";
+import ALevelQuestionList from "./components/ALevelQuestionList";
 
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
-
-
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
@@ -20,10 +14,11 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
+          <Route path="/aqlist" element={<ALevelQuestionList />} />
           <Route path="/q/:qid" element={<QuestionPage />} />
           <Route path="/login" element={<SignUpIn />} />
           <Route path="/qlist" element={<QuestionList />} />
-          <Route path="/"  element={<Home />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </Router>
     </div>
